@@ -1,37 +1,36 @@
 #pragma once
 
-#include <stdio.h>
-#include <list>
+#ifndef CONFPARSER_H
+#define CONFPARSER_H
 
-class ConfigParser
-{
-public:
-	//ConfigParser();
-	int loder(char* conf_filepath);
+#include <vector>
+using namespace std;
 
-	//for single
-	ConfigParser* instance();
+#define MAX_CONF_LEN  1024
+#define CONF_FILE     "spider.conf"
 
-	//options
-	int getJobNum();
-	char getUrlSeed();
-	int getDeep();
-	int getLogLevel();
-	char* getmodulePath();
-	list<string> getModules();
-	list<string> getFileTypes();
+/* see the spiderq.conf to get meaning for each member variable below */
+typedef struct Config {
+	int              max_job_num;
+	char            *seeds;
+	char            *include_prefixes;
+	char            *exclude_prefixes;
+	char            *logfile;
+	int              log_level;
+	int              max_depth;
+	int              make_hostdir;
+	int              stat_interval;
 
-private:
-	//for single
-	ConfigParser();
-	static ConfigParser* _self;
-
-private:
-	int job_num;
-	char* seed;
-	int deeps;
-	int log_level;
-	char* Module_path;
-	list<string> Module_name;
-	list<string> file_type;
+	char *           module_path;
+	vector<char *>   modules;
+	vector<char *>   accept_types;
 };
+
+/* give default values to member variables in struct Config */
+extern Config * initconfig();
+
+/* load configuration in conf file to Config object */
+extern void loadconfig(Config *conf);
+
+
+#endif
