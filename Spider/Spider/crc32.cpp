@@ -3,6 +3,7 @@
 #include <string.h> 
 #include "crc32.h"
 
+
 static unsigned int   CRC32[256];
 static char   init = 0;
 

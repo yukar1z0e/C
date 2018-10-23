@@ -5,7 +5,8 @@
 #include <stdlib.h>
 #include "qstring.h"
 
- 
+
+
 char * strcat2(int argc, const char *str1, const char * str2, ...) 
 {
     int tmp = 0;

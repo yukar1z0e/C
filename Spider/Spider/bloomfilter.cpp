@@ -1,10 +1,11 @@
 #include "bloomfilter.h"
 #include "hashs.h"
-//#include "md5.h" 
+#include "md5.h" 
 #include "crc32.h"
-//#include "sha1.h"
+#include "sha1.h"
 #include <stdlib.h>
 #include <pthread.h>
+
 
 #define HASH_FUNC_NUM 8
 #define BLOOM_SIZE 1000000

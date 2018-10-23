@@ -1,4 +1,4 @@
-#include <sys/socket.h>
+#include <socket.h>
 #include <pthread.h>
 #include <errno.h>
 #include <fcntl.h>

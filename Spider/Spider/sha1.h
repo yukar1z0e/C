@@ -1,6 +1,7 @@
 #ifndef SHA1_H
 #define SHA1_H
 
+
 typedef unsigned int u32;
  
 typedef struct {

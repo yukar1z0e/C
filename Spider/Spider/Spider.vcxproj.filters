@@ -18,9 +18,6 @@
     <ClInclude Include="confparser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Spider.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="bloomfilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,12 +48,12 @@
     <ClInclude Include="socket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\yakum\Downloads\spider项目代码\src\spider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Confparser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Spider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="threads.cpp">
@@ -87,6 +84,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Users\yakum\Downloads\spider项目代码\src\spider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

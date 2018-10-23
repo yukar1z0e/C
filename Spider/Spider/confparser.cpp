@@ -2,6 +2,7 @@
 #include "qstring.h"
 #include "confparser.h"
 
+
 #define INF 0x7FFFFFFF
 
 Config * initconfig()

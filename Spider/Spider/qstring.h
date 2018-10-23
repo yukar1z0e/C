@@ -1,6 +1,7 @@
 #ifndef QSTRING_H
 #define QSTRING_H
  
+
 /* 拼接多个字符串
  * argc: the number of strings
  */

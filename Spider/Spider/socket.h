@@ -1,6 +1,6 @@
 #ifndef QSOCKET_H
 #define QSOCKET_H
- 
+
 #include "url.h"
 
 /* struct for http header */

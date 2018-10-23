@@ -3,15 +3,16 @@
  
 #include <event.h>
 #include <evdns.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include <socket.h>
+#include <in.h>
+#include <inet.h>
 #include <regex.h>
 #include <queue>
 #include <map>
 #include <string>
 #include "spider.h"
 #include "bloomfilter.h"
+
 
 using namespace std;
 
