@@ -115,7 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Users\yakum\Downloads\spider项目代码\src\spider.h" />
     <ClInclude Include="bloomfilter.h" />
     <ClInclude Include="confparser.h" />
     <ClInclude Include="crc32.h" />
@@ -125,11 +124,11 @@
     <ClInclude Include="qstring.h" />
     <ClInclude Include="sha1.h" />
     <ClInclude Include="socket.h" />
+    <ClInclude Include="spider.h" />
     <ClInclude Include="threads.h" />
     <ClInclude Include="url.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Users\yakum\Downloads\spider项目代码\src\spider.cpp" />
     <ClCompile Include="bloomfilter.cpp" />
     <ClCompile Include="Confparser.cpp" />
     <ClCompile Include="crc32.cpp" />
@@ -139,6 +138,7 @@
     <ClCompile Include="qstring.cpp" />
     <ClCompile Include="sha1.cpp" />
     <ClCompile Include="socket.cpp" />
+    <ClCompile Include="spider.cpp" />
     <ClCompile Include="threads.cpp" />
     <ClCompile Include="url.cpp" />
   </ItemGroup>

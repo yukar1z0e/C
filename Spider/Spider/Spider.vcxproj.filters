@@ -48,7 +48,7 @@
     <ClInclude Include="socket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Users\yakum\Downloads\spider项目代码\src\spider.h">
+    <ClInclude Include="spider.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,7 +86,7 @@
     <ClCompile Include="socket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Users\yakum\Downloads\spider项目代码\src\spider.cpp">
+    <ClCompile Include="spider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
