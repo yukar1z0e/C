@@ -1,0 +1,3 @@
+C:/Code/C++/Testshell/cmake-build-debug/CMakeFiles/Testshell.dir
+C:/Code/C++/Testshell/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/Testshell/cmake-build-debug/CMakeFiles/rebuild_cache.dir
