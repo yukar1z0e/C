@@ -1,0 +1,3 @@
+C:/Code/C++/ZeroPipeBackdoor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/ZeroPipeBackdoor/cmake-build-debug/CMakeFiles/ZeroPipeBackdoor.dir
+C:/Code/C++/ZeroPipeBackdoor/cmake-build-debug/CMakeFiles/rebuild_cache.dir

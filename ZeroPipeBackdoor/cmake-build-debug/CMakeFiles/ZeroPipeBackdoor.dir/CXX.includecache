@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Code/C++/ZeroPipeBackdoor/main.cpp
+iostream
+-
+zpDoor.h
+C:/Code/C++/ZeroPipeBackdoor/zpDoor.h
+
+C:/Code/C++/ZeroPipeBackdoor/zpDoor.h
+windows.h
+-
+winsock2.h
+-
+stdlib.h
+-
+malloc.h
+-
+memory.h
+-
+tchar.h
+-
+
