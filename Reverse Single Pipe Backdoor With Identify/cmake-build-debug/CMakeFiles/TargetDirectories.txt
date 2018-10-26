@@ -1,0 +1,3 @@
+C:/Code/C++/Reverse Single Pipe Backdoor With Identify/cmake-build-debug/CMakeFiles/Reverse_Single_Pipe_Backdoor_With_Identify.dir
+C:/Code/C++/Reverse Single Pipe Backdoor With Identify/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/Reverse Single Pipe Backdoor With Identify/cmake-build-debug/CMakeFiles/rebuild_cache.dir

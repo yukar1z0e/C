@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Code/C++/Reverse Single Pipe Backdoor With Identify/Header.h
+windows.h
+-
+winsock2.h
+-
+stdlib.h
+-
+malloc.h
+-
+memory.h
+-
+tchar.h
+-
+
+C:/Code/C++/Reverse Single Pipe Backdoor With Identify/main.cpp
+Header.h
+C:/Code/C++/Reverse Single Pipe Backdoor With Identify/Header.h
+
