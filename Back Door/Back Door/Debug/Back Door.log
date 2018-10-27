@@ -1,0 +1,27 @@
+﻿  Source.cpp
+c:\code\c++\back door\back door\source.cpp(128): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [21]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(128): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(182): error C4996: 'GetVersionExA': was declared deprecated
+  c:\windows kits\10\include\10.0.17134.0\um\sysinfoapi.h(378): note: see declaration of 'GetVersionExA'
+c:\code\c++\back door\back door\source.cpp(209): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [40]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(209): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(210): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [53]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(210): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(212): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [53]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(212): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(215): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [47]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(215): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(219): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [31]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(219): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(222): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [107]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(222): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(226): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [51]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(226): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(230): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [66]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(230): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(242): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [11]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(242): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(267): error C2664: 'int SendData(SOCKET,void *,DWORD)': cannot convert argument 2 from 'const char [11]' to 'void *'
+  c:\code\c++\back door\back door\source.cpp(267): note: Conversion loses qualifiers
+c:\code\c++\back door\back door\source.cpp(284): error C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\windows kits\10\include\10.0.17134.0\um\winsock2.h(1830): note: see declaration of 'inet_addr'
