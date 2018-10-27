@@ -33,6 +33,7 @@
 #include <malloc.h>
 #include <memory.h>
 #include <tchar.h>
+#include <WS2tcpip.h>
 
 class CThreadNode {
 public:

