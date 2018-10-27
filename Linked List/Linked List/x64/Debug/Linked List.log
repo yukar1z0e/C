@@ -1,0 +1,6 @@
+﻿  linklist.c
+c:\code\c++\linked list\linked list\linklist.c(52): warning C4033: 'LinkList_Length' must return a value
+  test.c
+  Generating Code...
+c:\code\c++\linked list\linked list\linklist.c(57): warning C4715: 'LinkList_Length': not all control paths return a value
+  Linked List.vcxproj -> C:\Code\C++\Linked List\x64\Debug\Linked List.exe
