@@ -49,7 +49,7 @@ int LinkList_Length(LinkList* list)
 	TLinkList *tlist = NULL;
 	if (list == NULL)
 	{
-		return;
+		return 0;
 	}
 	tlist = (TLinkList*)list;
 

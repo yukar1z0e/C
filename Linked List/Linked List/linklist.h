@@ -7,6 +7,7 @@
 typedef void LinkList;
 
 typedef struct _tag_LinkListNode {
+        void * data;
 	struct _tag_LinkListNode* next;
 }LinkListNode;
 

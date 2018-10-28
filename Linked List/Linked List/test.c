@@ -7,7 +7,6 @@ typedef struct MyStruct
 {
 	int age;
 	char name[64];
-	LinkListNode node;
 }MyStruct;
 
 void main()
@@ -21,6 +20,11 @@ void main()
 	s2.age = 2;
 	s3.age = 3;
 
+        LinkListNode lln1, lln2, lln3;
+        lln1.data = &s1;
+        lln2.data = &s2;
+        lln3.data = &s3;
+
 	list = LinkList_Create();
 
 	if (list == NULL)
@@ -30,13 +34,13 @@ void main()
 
 	len = LinkList_Length(list);
 
-	ret = LinkList_Insert(list, (LinkListNode*)&s1, 0);
-	ret = LinkList_Insert(list, (LinkListNode*)&s2, 0);
-	ret = LinkList_Insert(list, (LinkListNode*)&s3, 0);
+	ret = LinkList_Insert(list, &lln1, 0);
+	ret = LinkList_Insert(list, &lln2, 0);
+	ret = LinkList_Insert(list, &lln3, 0);
 
 	for (i = 0; i < LinkList_Length(list); i++)
 	{
-		MyStruct *tmp = (MyStruct*)LinkList_Get(list, i);
+		LinkListNode *tmp = LinkList_Get(list, i);
 		if (tmp == NULL)
 		{
 			printf("Empty");
@@ -45,7 +49,8 @@ void main()
 
 			return;
 		}
-		printf("tmp->age: %d \n", tmp->age);
+                MyStruct * tmpStruct = (MyStruct*)tmp->data; 
+		printf("tmpStruct->age: %d \n", tmpStruct->age);
 	}
 
 	/*while (LinkList_Length(list) > 0)
