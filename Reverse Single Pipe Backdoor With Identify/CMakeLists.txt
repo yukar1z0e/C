@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(Reverse_Single_Pipe_Backdoor_With_Identify)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Reverse_Single_Pipe_Backdoor_With_Identify main.cpp)

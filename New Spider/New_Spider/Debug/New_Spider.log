@@ -1,0 +1,48 @@
+﻿  dso.cpp
+c:\code\c++\new_spider\new_spider\dso.h(29): error C2143: syntax error: missing ';' before '*'
+c:\code\c++\new_spider\new_spider\dso.h(29): error C2238: unexpected token(s) preceding ';'
+c:\code\c++\new_spider\new_spider\dso.h(33): error C2327: 'DSO_Manager::Module': is not a type name, static, or enumerator
+c:\code\c++\new_spider\new_spider\dso.cpp(6): error C2065: 'module': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(6): error C2061: syntax error: identifier 'Module'
+c:\code\c++\new_spider\new_spider\dso.cpp(7): error C3861: 'dlopen': identifier not found
+c:\code\c++\new_spider\new_spider\dso.cpp(9): error C2065: 'MODULE_ERROR': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(12): error C2065: 'module': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(12): error C2065: 'init': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(12): error C3861: 'dlsym': identifier not found
+c:\code\c++\new_spider\new_spider\dso.cpp(13): error C2065: 'module': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(14): error C2065: 'MODULE_ERROR': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(17): error C2065: 'module': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(17): error C2100: illegal indirection
+c:\code\c++\new_spider\new_spider\dso.cpp(17): error C3861: 'dlsym': identifier not found
+c:\code\c++\new_spider\new_spider\dso.cpp(18): error C2065: 'module': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(18): error C2059: syntax error: '.'
+c:\code\c++\new_spider\new_spider\dso.cpp(18): error C2143: syntax error: missing ';' before '{'
+c:\code\c++\new_spider\new_spider\dso.cpp(19): error C2065: 'MODULE_ERROR': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(22): error C3861: 'dlclose': identifier not found
+c:\code\c++\new_spider\new_spider\dso.cpp(24): error C2065: 'modules': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(24): error C2065: 'module': undeclared identifier
+c:\code\c++\new_spider\new_spider\dso.cpp(29): error C2039: 'getModule': is not a member of 'DSO_Manager'
+  c:\code\c++\new_spider\new_spider\dso.h(26): note: see declaration of 'DSO_Manager'
+c:\code\c++\new_spider\new_spider\dso.cpp(30): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+  test.cpp
+c:\code\c++\new_spider\new_spider\dso.h(29): error C2143: syntax error: missing ';' before '*'
+c:\code\c++\new_spider\new_spider\dso.h(29): error C2238: unexpected token(s) preceding ';'
+c:\code\c++\new_spider\new_spider\dso.h(33): error C2327: 'DSO_Manager::Module': is not a type name, static, or enumerator
+c:\code\c++\new_spider\new_spider\test.cpp(6): error C2664: 'int DSO_Manager::load(char *,char *)': cannot convert argument 1 from 'const char [14]' to 'char *'
+  c:\code\c++\new_spider\new_spider\test.cpp(6): note: Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+c:\code\c++\new_spider\new_spider\test.cpp(7): error C2039: 'getModule': is not a member of 'DSO_Manager'
+  c:\code\c++\new_spider\new_spider\dso.h(26): note: see declaration of 'DSO_Manager'
+c:\code\c++\new_spider\new_spider\test.cpp(8): error C2440: 'initializing': cannot convert from 'const char [8]' to 'char *'
+  c:\code\c++\new_spider\new_spider\test.cpp(8): note: Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+c:\code\c++\new_spider\new_spider\test.cpp(9): error C2059: syntax error: '('
+  testmodule.cpp
+c:\code\c++\new_spider\new_spider\dso.h(29): error C2143: syntax error: missing ';' before '*'
+c:\code\c++\new_spider\new_spider\dso.h(29): error C2238: unexpected token(s) preceding ';'
+c:\code\c++\new_spider\new_spider\dso.h(33): error C2327: 'DSO_Manager::Module': is not a type name, static, or enumerator
+c:\code\c++\new_spider\new_spider\testmodule.cpp(10): error C2065: 'mod': undeclared identifier
+c:\code\c++\new_spider\new_spider\testmodule.cpp(17): error C2078: too many initializers
+c:\code\c++\new_spider\new_spider\testmodule.cpp(20): error C2440: 'initializing': cannot convert from 'const char [49]' to 'char *'
+  c:\code\c++\new_spider\new_spider\testmodule.cpp(20): note: Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+c:\code\c++\new_spider\new_spider\testmodule.cpp(20): error C2440: 'initializing': cannot convert from 'int (__cdecl *)(Module *)' to 'void (__cdecl *)(Module *)'
+  c:\code\c++\new_spider\new_spider\testmodule.cpp(20): note: None of the functions with this name in scope match the target type
+  Generating Code...

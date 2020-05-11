@@ -1,0 +1,99 @@
+﻿  Source.c
+c:\code\c++\icmpattack\icmpattack\source.c(7): error C2027: use of undefined type 'ip'
+  c:\code\c++\icmpattack\icmpattack\source.c(6): note: see declaration of 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(9): error C2037: left of 'ip_v' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(10): error C2037: left of 'ip_hl' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(11): error C2037: left of 'ip_tos' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(12): error C2037: left of 'ip_len' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(12): warning C4013: 'htons' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(12): error C2065: 'ICMP_PACKET_SIZE': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(13): error C2037: left of 'ip_id' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(13): warning C4013: 'getpid' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(14): error C2037: left of 'ip_off' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(15): error C2037: left of 'ip_ttl' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(16): error C2037: left of 'ip_p' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(16): error C2065: 'PROTO_ICMP': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(17): error C2037: left of 'ip_sum' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(18): error C2037: left of 'ip_src' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(18): warning C4013: 'inet_addr' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(18): error C2065: 'FAKE_IP': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(19): error C2037: left of 'ip_dst' specifies undefined struct/union 'ip'
+c:\code\c++\icmpattack\icmpattack\source.c(19): error C2065: 'dest': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(21): error C2037: left of 'icmp_type' specifies undefined struct/union 'icmp'
+c:\code\c++\icmpattack\icmpattack\source.c(21): error C2065: 'ICMP_ECHO': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(22): error C2037: left of 'icmp_code' specifies undefined struct/union 'icmp'
+c:\code\c++\icmpattack\icmpattack\source.c(23): error C2037: left of 'icmp_cksum' specifies undefined struct/union 'icmp'
+c:\code\c++\icmpattack\icmpattack\source.c(23): error C2065: 'ICMP_ECHO': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(29): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(29): error C2065: 'ICMP_PACKET_SIZE': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(30): warning C4013: 'memset' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(30): error C2065: 'ICMP_PACKET_SIZE': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(31): error C2079: 'to' uses undefined struct 'sockaddr_in'
+c:\code\c++\icmpattack\icmpattack\source.c(34): error C2224: left of '.sin_family' must have struct/union type
+c:\code\c++\icmpattack\icmpattack\source.c(34): error C2065: 'AF_INET': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(35): error C2224: left of '.sin_addr' must have struct/union type
+c:\code\c++\icmpattack\icmpattack\source.c(35): error C2065: 'dest': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(36): error C2224: left of '.sin_port' must have struct/union type
+c:\code\c++\icmpattack\icmpattack\source.c(38): error C2065: 'alive': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(40): warning C4013: 'sendto' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(40): error C2065: 'rawsock': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(40): error C2065: 'ICMP_PACKET_SIZE': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(40): error C2027: use of undefined type 'sockaddr'
+  c:\code\c++\icmpattack\icmpattack\source.c(40): note: see declaration of 'sockaddr'
+c:\code\c++\icmpattack\icmpattack\source.c(43): warning C4013: 'free' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(50): error C2065: 'alive': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(51): warning C4013: 'printf' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(58): error C2065: 'NULL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(59): error C2065: 'NULL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(61): error C2065: 'alive': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(62): error C2065: 'pthread_t': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(62): error C2146: syntax error: missing ';' before identifier 'attack_thread'
+c:\code\c++\icmpattack\icmpattack\source.c(62): error C2065: 'attack_thread': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(62): error C2065: 'THREAD_MAX_NUM': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(62): error C2109: subscript requires array or pointer type
+c:\code\c++\icmpattack\icmpattack\source.c(71): warning C4013: 'signal' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(71): error C2065: 'SIGINT': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(73): warning C4013: 'getprotobyname' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(73): error C2065: 'PROTO_NAME': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(73): warning C4047: '=': 'protoent *' differs in levels of indirection from 'int'
+c:\code\c++\icmpattack\icmpattack\source.c(74): error C2065: 'NULL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(74): warning C4047: '==': 'protoent *' differs in levels of indirection from 'int'
+c:\code\c++\icmpattack\icmpattack\source.c(80): error C2065: 'PROTO_ICMP': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(80): error C2037: left of 'p_proto' specifies undefined struct/union 'protoent'
+c:\code\c++\icmpattack\icmpattack\source.c(82): error C2065: 'dest': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(84): error C2065: 'dest': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(84): error C2065: 'INADDR_NONE': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(86): warning C4013: 'gethostbyname' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(86): warning C4047: '=': 'hostent *' differs in levels of indirection from 'int'
+c:\code\c++\icmpattack\icmpattack\source.c(87): error C2065: 'NULL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(87): warning C4047: '==': 'hostent *' differs in levels of indirection from 'int'
+c:\code\c++\icmpattack\icmpattack\source.c(92): warning C4013: 'memcpy' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(92): error C2065: 'dest': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(92): error C2037: left of 'h_addr' specifies undefined struct/union 'hostent'
+c:\code\c++\icmpattack\icmpattack\source.c(92): error C2037: left of 'h_length' specifies undefined struct/union 'hostent'
+c:\code\c++\icmpattack\icmpattack\source.c(96): error C2065: 'rawsock': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(96): warning C4013: 'socket' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(96): error C2065: 'AF_INET': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(96): error C2065: 'SOCK_RAW': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(96): error C2065: 'PROTO_ICMP': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(97): error C2065: 'rawsock': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(103): warning C4013: 'setsockopt' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(103): error C2065: 'rawsock': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(103): error C2065: 'SOL_IP': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(103): error C2065: 'IP_HDRINCL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(107): error C2065: 'THREAD_MAX_NUM': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(109): warning C4013: 'pthread_create' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(109): error C2065: 'attack_thread': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(109): error C2109: subscript requires array or pointer type
+c:\code\c++\icmpattack\icmpattack\source.c(109): error C2065: 'NULL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(112): error C2065: 'attack_thread': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(112): error C2109: subscript requires array or pointer type
+c:\code\c++\icmpattack\icmpattack\source.c(116): error C2065: 'THREAD_MAX_NUM': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(118): warning C4013: 'pthread_join' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(118): error C2065: 'attack_thread': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(118): error C2109: subscript requires array or pointer type
+c:\code\c++\icmpattack\icmpattack\source.c(118): error C2065: 'NULL': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(123): warning C4013: 'close' undefined; assuming extern returning int
+c:\code\c++\icmpattack\icmpattack\source.c(123): error C2065: 'rawsock': undeclared identifier
+c:\code\c++\icmpattack\icmpattack\source.c(58): warning C4047: 'initializing': 'hostent *' differs in levels of indirection from 'int'
+c:\code\c++\icmpattack\icmpattack\source.c(59): warning C4047: 'initializing': 'protoent *' differs in levels of indirection from 'int'

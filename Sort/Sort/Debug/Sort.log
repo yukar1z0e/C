@@ -1,0 +1,7 @@
+﻿  selection_sort.c
+  test.c
+c:\code\c++\sort\sort\test.c(19): warning C4013: 'exit' undefined; assuming extern returning int
+c:\code\c++\sort\sort\test.c(25): warning C4013: 'rand' undefined; assuming extern returning int
+c:\code\c++\sort\sort\test.c(40): warning C4013: 'system' undefined; assuming extern returning int
+  Generating Code...
+  Sort.vcxproj -> C:\Code\C++\Sort\Debug\Sort.exe

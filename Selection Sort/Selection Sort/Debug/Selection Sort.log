@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\code\c++\selection sort\selection sort\source.c(34): warning C4013: 'exit' undefined; assuming extern returning int
+c:\code\c++\selection sort\selection sort\source.c(40): warning C4013: 'rand' undefined; assuming extern returning int
+c:\code\c++\selection sort\selection sort\source.c(53): warning C4013: 'system' undefined; assuming extern returning int
+  Selection Sort.vcxproj -> C:\Code\C++\Selection Sort\Debug\Selection Sort.exe

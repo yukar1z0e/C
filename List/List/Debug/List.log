@@ -1,0 +1,5 @@
+﻿C:\Files\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (List.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  seqlist.c
+  Test.c
+  Generating Code...
+  List.vcxproj -> C:\Code\C++\List\Debug\Sequence List.exe

